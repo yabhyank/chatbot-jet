@@ -1,0 +1,32 @@
+<!--
+ Copyright (c) 2014, 2018, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="oj-hybrid-padding">
+  <h1>Outstanding Balance</h1>
+  <div>
+    <oj-table id='table' aria-label='Customer'
+                                      data='[[dataprovider]]'
+                                      selection-mode='{"row": "multiple", "column": "multiple"}'
+                                      dnd='{"reorder": {"columns": "enabled"}}'
+                                      scroll-policy='loadMoreOnScroll'
+                                      scroll-policy-options='{"fetchSize": 10}'
+                                      columns='[{"headerText": "ID",
+                                                 "field": "id",
+                                                 "headerClassName": "oj-sm-only-hide",
+                                                 "className": "oj-sm-only-hide",
+                                                 "resizable": "enabled"},
+                                                {"headerText": "Cust Name",
+                                                 "field": "NAME",
+                                                 "resizable": "enabled"},
+                                                {"headerText": "Balance",
+                                                 "field": "balance",
+                                                 "headerClassName": "oj-sm-only-hide",
+                                                 "className": "oj-sm-only-hide",
+                                                 "resizable": "enabled"},
+                                                {"headerText": "Group",
+                                                 "field": "group_Id",
+                                                 "resizable": "enabled"}]'
+                                      style='height: 400px;'>
+      </oj-table>
+</div>
